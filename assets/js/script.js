@@ -13,7 +13,12 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
+// Automatically add "active" on mobile screen widths on page load
+window.addEventListener('load', () => {
+  if(window.innerWidth <= 768) {  // adjust breakpoint as needed
+    sidebarBtn.click(); //simulates click on mobile devices
+  }
+});
 
 
 // testimonials variables
