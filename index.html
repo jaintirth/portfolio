@@ -727,12 +727,13 @@
           </ul>
 
         </section> -->
+        <div class="button-container">
+          <button class="button" onclick="downloadResume()">
+            <span class="button-content">Download</span>
+          </button>
+        </div>
 
       </article>
-
-
-
-
 
       <!--
         - #PORTFOLIO
@@ -1229,7 +1230,14 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script>
+    function downloadResume() {
+      const link = document.createElement('a');
+      link.href = 'assets/resume.pdf';
+      link.download = 'Tirth Jain-Resume.pdf'; // optional: specify the downloaded filename
+      link.click();
+    }
+  </script>
 </body>
 
 </html>
