@@ -814,7 +814,7 @@ main {
 .timeline-item::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: -33px;
   height: 6px;
   width: 6px;
